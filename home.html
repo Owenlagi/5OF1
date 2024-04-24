@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="stylehome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your 5OF1 Media</h1>
+        <nav>
+            <ul>
+                <li><a href="home.php">Home</a></li>
+                <li><a href="profile.php">Profile</a></li>
+                <li><a href="messages.php">Messages</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="post-form">
+            <h2>Create Post</h2>
+            <form action="create_post.php" method="post">
+                <textarea name="post-content" placeholder="What's on your mind?"></textarea>
+                <button type="submit">Post</button>
+            </form>
+        </section>
+        <section class="posts">
+            <h2>Recent Posts</h2>
+            <!-- Posts will be dynamically loaded here -->
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Your 5OF1 Media
+    </footer>
+</body>
+</html>
